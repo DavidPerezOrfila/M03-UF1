@@ -1,4 +1,4 @@
-﻿Public Class Form2
+﻿Public Class menorque
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim n1 As Integer
         Dim n2 As Integer
