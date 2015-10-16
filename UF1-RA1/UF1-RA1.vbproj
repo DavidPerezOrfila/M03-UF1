@@ -115,6 +115,12 @@
     <Compile Include="..\..\UF1-RA1.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Tablamultiplicar.Designer.vb">
+      <DependentUpon>Tablamultiplicar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tablamultiplicar.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="estructurasdecision.Designer.vb">
       <DependentUpon>estructurasdecision.vb</DependentUpon>
     </Compile>
@@ -158,6 +164,9 @@
   <ItemGroup>
     <EmbeddedResource Include="..\..\UF1-RA1.resx">
       <DependentUpon>UF1-RA1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablamultiplicar.resx">
+      <DependentUpon>Tablamultiplicar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="estructurasdecision.resx">
       <DependentUpon>estructurasdecision.vb</DependentUpon>
