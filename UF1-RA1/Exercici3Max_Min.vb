@@ -1,4 +1,5 @@
-﻿Public Class maximoyminimo
+﻿Public Class Exercici3Max_Min
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim n1 As Integer
         Dim n2 As Integer
@@ -27,6 +28,5 @@
         End If
 
         MessageBox.Show(resultado)
-
     End Sub
 End Class

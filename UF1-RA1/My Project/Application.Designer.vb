@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.UF1_RA1.Exercici2_Divisiblepor
+            Me.MainForm = Global.UF1_RA1.Exercici3Max_Min
         End Sub
     End Class
 End Namespace

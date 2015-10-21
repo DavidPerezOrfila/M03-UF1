@@ -121,10 +121,10 @@
     <Compile Include="Exercici2Divisible.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="maximoyminimo.Designer.vb">
-      <DependentUpon>maximoyminimo.vb</DependentUpon>
+    <Compile Include="Exercici3Max_Min.Designer.vb">
+      <DependentUpon>Exercici3Max_Min.vb</DependentUpon>
     </Compile>
-    <Compile Include="maximoyminimo.vb">
+    <Compile Include="Exercici3Max_Min.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Exercici5_NotaAlumne.Designer.vb">
@@ -204,8 +204,8 @@
     <EmbeddedResource Include="Exercici2Divisible.resx">
       <DependentUpon>Exercici2Divisible.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="maximoyminimo.resx">
-      <DependentUpon>maximoyminimo.vb</DependentUpon>
+    <EmbeddedResource Include="Exercici3Max_Min.resx">
+      <DependentUpon>Exercici3Max_Min.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Exercici5_NotaAlumne.resx">
       <DependentUpon>Exercici5_NotaAlumne.vb</DependentUpon>
