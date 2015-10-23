@@ -133,6 +133,18 @@
     <Compile Include="Exercici5_NotaAlumne.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Exercici8_NotaSelectCase.Designer.vb">
+      <DependentUpon>Exercici8_NotaSelectCase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Exercici8_NotaSelectCase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exercici9_Calendari.Designer.vb">
+      <DependentUpon>Exercici9_Calendari.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Exercici9_Calendari.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Semana.Designer.vb">
       <DependentUpon>Semana.vb</DependentUpon>
     </Compile>
@@ -209,6 +221,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Exercici5_NotaAlumne.resx">
       <DependentUpon>Exercici5_NotaAlumne.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exercici8_NotaSelectCase.resx">
+      <DependentUpon>Exercici8_NotaSelectCase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exercici9_Calendari.resx">
+      <DependentUpon>Exercici9_Calendari.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Semana.resx">
       <DependentUpon>Semana.vb</DependentUpon>

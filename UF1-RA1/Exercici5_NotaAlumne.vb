@@ -3,20 +3,16 @@
 
         Dim OP1 As Double
         OP1 = TextBox1.Text
-        Dim nota As String = ""
-
-        Select Case OP1
-            Case 0 <= 5
-                nota = OP1.ToString() + " Suspendido"
-            Case 5 <= 6.5
-                nota = OP1.ToString() + " Aprobado"
-            Case 6.5 <= 8.5
-                OP1 = OP1.ToString() + " Notable"
-            Case 8.5 <= 9.75
-                nota = OP1.ToString() + " Excelente"
-            Case 9.75 <= 10
-                nota = OP1.ToString() + " Matricula"
-        End Select
-        MessageBox.Show(nota)
+        If OP1 = 0 <= 4 Then
+            MessageBox.Show(" Suspendido")
+        ElseIf OP1 = 5 <= 6.5 Then
+            MessageBox.Show(" Aprobado")
+        ElseIf OP1 = 6.5 <= 8.5 Then
+            MessageBox.Show(" Notable")
+        ElseIf OP1 = 8.5 <= 9.75 Then
+            MessageBox.Show(" Excelente")
+        ElseIf OP1 = 9.75 <= 10 Then
+            MessageBox.Show(" Matricula")
+        End If
     End Sub
 End Class
