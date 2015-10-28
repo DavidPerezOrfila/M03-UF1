@@ -115,6 +115,12 @@
     <Compile Include="..\..\UF1-RA1.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AdivinarN.Designer.vb">
+      <DependentUpon>AdivinarN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdivinarN.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Exercici2Divisible.Designer.vb">
       <DependentUpon>Exercici2Divisible.vb</DependentUpon>
     </Compile>
@@ -212,6 +218,9 @@
   <ItemGroup>
     <EmbeddedResource Include="..\..\UF1-RA1.resx">
       <DependentUpon>UF1-RA1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdivinarN.resx">
+      <DependentUpon>AdivinarN.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Exercici2Divisible.resx">
       <DependentUpon>Exercici2Divisible.vb</DependentUpon>
