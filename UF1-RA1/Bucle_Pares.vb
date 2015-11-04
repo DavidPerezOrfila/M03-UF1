@@ -26,7 +26,9 @@
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Dim pares As Integer = 0
         Dim salida As String = ""
+
         Do While pares <= 20
+
             salida = salida + " - " + pares.ToString()
             pares = pares + 2
 

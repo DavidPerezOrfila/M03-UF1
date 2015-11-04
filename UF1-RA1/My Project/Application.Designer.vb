@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.UF1_RA1.Bucle_Pares
+            Me.MainForm = Global.UF1_RA1.sumacien
         End Sub
     End Class
 End Namespace

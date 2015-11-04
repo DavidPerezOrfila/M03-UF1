@@ -169,6 +169,12 @@
     <Compile Include="Semanaifelse.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="sumacien.Designer.vb">
+      <DependentUpon>sumacien.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sumacien.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Tablamultiplicar.Designer.vb">
       <DependentUpon>Tablamultiplicar.vb</DependentUpon>
     </Compile>
@@ -251,6 +257,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Semanaifelse.resx">
       <DependentUpon>Semanaifelse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sumacien.resx">
+      <DependentUpon>sumacien.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tablamultiplicar.resx">
       <DependentUpon>Tablamultiplicar.vb</DependentUpon>
