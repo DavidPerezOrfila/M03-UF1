@@ -81,4 +81,23 @@
         MessageBox.Show(notapromedio.ToString())
 
     End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        Dim menor As Integer
+        Dim cnt As Integer
+        Dim num As Integer
+        menor = InputBox("Introduce un número")
+
+        For cnt = 0 To 9
+            num = InputBox("Introduce un número")
+            If num < menor Then
+                num = menor
+            End If
+
+        Next
+        MessageBox.Show(menor.ToString())
+
+
+
+    End Sub
 End Class
