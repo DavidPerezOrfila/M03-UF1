@@ -100,4 +100,110 @@
 
 
     End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        Dim Num As Integer
+        Dim par As Integer
+        Dim impar As Integer
+        Dim Cnt As Integer
+        Num = InputBox("Introduce un número")
+        Cnt = 0
+        For Cnt = 0 To 9
+            If Num Mod 2 = 0 Then
+                Num = par
+                MessageBox.Show("Es par!")
+            Else
+                Num = impar
+                MessageBox.Show("Es impar!")
+            End If
+        Next
+        MessageBox.Show(Num.ToString())
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        Dim N1 As Integer
+        Dim N2 As Integer
+        Dim cnt As Integer
+        Dim intervalo As Integer
+        Dim SUMA As Integer = 0
+        N1 = InputBox("Introduce un número")
+        N2 = InputBox("Introduce otro número")
+        intervalo = N2 - N1
+
+
+        MessageBox.Show(SUMA.ToString())
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        Dim n As Integer
+        Dim digitos As Integer = 0
+
+        n = InputBox("Introduce un número")
+        Do
+            n = n \ 10
+            digitos = digitos + 1
+        Loop Until (n = 0)
+
+        MessageBox.Show(digitos)
+    End Sub
+
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+        Dim i, j As Integer
+        Dim salida As String = ""
+        For i = 0 To 5 'filas
+            For j = 0 To 5 'columnas
+                salida = salida + " * "
+            Next 'fin de una fila
+            salida = salida + vbNewLine
+        Next 'fin de todas las filas
+        MessageBox.Show(salida)
+
+
+
+
+
+
+    End Sub
+
+    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+        Dim i, j As Integer
+        Dim salida As String = ""
+
+        For i = 0 To 5
+
+            For j = 0 To i
+                salida = salida + " * "
+            Next
+            salida = salida + vbNewLine
+
+        Next
+        MessageBox.Show(salida)
+
+    End Sub
+
+    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+        Dim i, j As Integer
+        Dim salida As String = ""
+
+        For i = 0 To 5
+
+            For j = 0 To i
+                salida = salida + " * "
+            Next
+            salida = salida + vbNewLine
+
+        Next
+        MessageBox.Show(salida)
+    End Sub
+
+    Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
+        Dim Num As Integer
+        Dim cnt As Integer
+        Dim factorial As Integer = 1
+        Num = InputBox("Introduce un número")
+        For cnt = 1 To Num
+            factorial = factorial * cnt
+        Next
+        MessageBox.Show(factorial)
+    End Sub
 End Class
