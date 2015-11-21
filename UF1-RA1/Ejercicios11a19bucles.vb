@@ -154,15 +154,66 @@
             cnt = cnt + 1
             If numero < menor Then
                 menor = numero
-            ElseIf numero > menor Then
+            ElseIf numero > mayor Then
                 mayor = numero
             End If
+
+            suma = (suma + numero)
             numero = InputBox("Introduce un número")
         End While
-
-        suma = (suma + numero)
         media = suma / cnt
         MessageBox.Show(menor.ToString + " " + mayor.ToString + " " + media.ToString)
+
+    End Sub
+
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+        Dim num As Integer
+        Dim negativo As Integer
+        Dim positivo As Integer
+
+        num = InputBox("Introduce un número")
+        While num <> 0
+            If num < 0 Then
+                negativo = negativo + 1
+            ElseIf num > 0 Then
+                positivo = positivo + 1
+            End If
+            num = InputBox("Introduce un número")
+        End While
+        MessageBox.Show(negativo.ToString + " Son negativos" + " " + positivo.ToString + " Son positivos")
+
+    End Sub
+
+    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+        Dim num As Double
+        Dim salida As Double
+        Dim cnt As Double
+
+        num = InputBox("Introduce un número")
+        For cnt = 1 To num
+            If num < 0 Then
+                MessageBox.Show("El número tiene que ser mayor que cero")
+            End If
+            salida = num ^ cnt
+        Next
+        MessageBox.Show(salida.ToString)
+    End Sub
+
+    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+        Dim num As Integer
+        Dim salida As Double
+        Dim cnt As Integer
+
+        num = InputBox("Introduce un número")
+        If num Mod 2 <> 0 Then
+            MessageBox.Show(" El número no es divisible por 2 ")
+        End If
+        While num Mod 2 = 0
+
+
+        End While
+
+        MessageBox.Show(salida.ToString)
 
     End Sub
 End Class
