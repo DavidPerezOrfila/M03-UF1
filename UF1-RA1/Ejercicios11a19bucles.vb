@@ -201,19 +201,19 @@
 
     Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
         Dim num As Integer
-        Dim salida As Double
         Dim cnt As Integer
 
         num = InputBox("Introduce un número")
-        If num Mod 2 <> 0 Then
-            MessageBox.Show(" El número no es divisible por 2 ")
-        End If
+
         While num Mod 2 = 0
+            If num Mod 2 = 0 Then
+                num = num / 2
+                cnt = cnt + 1
 
-
+            End If
         End While
+        MessageBox.Show(cnt.ToString)
 
-        MessageBox.Show(salida.ToString)
 
     End Sub
 End Class
