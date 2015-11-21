@@ -133,6 +133,12 @@
     <Compile Include="Ejercicios11a19bucles.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Ex20bucles.Designer.vb">
+      <DependentUpon>Ex20bucles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ex20bucles.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Exercici2Divisible.Designer.vb">
       <DependentUpon>Exercici2Divisible.vb</DependentUpon>
     </Compile>
@@ -245,6 +251,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ejercicios11a19bucles.resx">
       <DependentUpon>Ejercicios11a19bucles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ex20bucles.resx">
+      <DependentUpon>Ex20bucles.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Exercici2Divisible.resx">
       <DependentUpon>Exercici2Divisible.vb</DependentUpon>

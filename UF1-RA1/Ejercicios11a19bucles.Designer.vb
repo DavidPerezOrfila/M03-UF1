@@ -106,7 +106,7 @@ Partial Class Ejercicios11a19bucles
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(75, 23)
         Me.Button8.TabIndex = 7
-        Me.Button8.Text = "Ex14 For"
+        Me.Button8.Text = "Ex14"
         Me.Button8.UseVisualStyleBackColor = True
         '
         'Button9
@@ -115,7 +115,7 @@ Partial Class Ejercicios11a19bucles
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(75, 23)
         Me.Button9.TabIndex = 8
-        Me.Button9.Text = "Ex15 for"
+        Me.Button9.Text = "Ex15"
         Me.Button9.UseVisualStyleBackColor = True
         '
         'Button10
