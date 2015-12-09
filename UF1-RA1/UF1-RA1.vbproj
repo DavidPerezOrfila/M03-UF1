@@ -121,6 +121,18 @@
     <Compile Include="AdivinarN.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Arraymultidimensional.Designer.vb">
+      <DependentUpon>Arraymultidimensional.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arraymultidimensional.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArraysNotasAlumnos.Designer.vb">
+      <DependentUpon>ArraysNotasAlumnos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ArraysNotasAlumnos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Bucle_Pares.Designer.vb">
       <DependentUpon>Bucle_Pares.vb</DependentUpon>
     </Compile>
@@ -137,6 +149,12 @@
       <DependentUpon>Ex20bucles.vb</DependentUpon>
     </Compile>
     <Compile Include="Ex20bucles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExArrays1a20.Designer.vb">
+      <DependentUpon>ExArrays1a20.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExArrays1a20.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Exercici2Divisible.Designer.vb">
@@ -167,6 +185,12 @@
       <DependentUpon>Exercici9_Calendari.vb</DependentUpon>
     </Compile>
     <Compile Include="Exercici9_Calendari.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notas array.Designer.vb">
+      <DependentUpon>Notas array.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Notas array.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Semana.Designer.vb">
@@ -246,6 +270,12 @@
     <EmbeddedResource Include="AdivinarN.resx">
       <DependentUpon>AdivinarN.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Arraymultidimensional.resx">
+      <DependentUpon>Arraymultidimensional.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArraysNotasAlumnos.resx">
+      <DependentUpon>ArraysNotasAlumnos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Bucle_Pares.resx">
       <DependentUpon>Bucle_Pares.vb</DependentUpon>
     </EmbeddedResource>
@@ -254,6 +284,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ex20bucles.resx">
       <DependentUpon>Ex20bucles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExArrays1a20.resx">
+      <DependentUpon>ExArrays1a20.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Exercici2Divisible.resx">
       <DependentUpon>Exercici2Divisible.vb</DependentUpon>
@@ -269,6 +302,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Exercici9_Calendari.resx">
       <DependentUpon>Exercici9_Calendari.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notas array.resx">
+      <DependentUpon>Notas array.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Semana.resx">
       <DependentUpon>Semana.vb</DependentUpon>
