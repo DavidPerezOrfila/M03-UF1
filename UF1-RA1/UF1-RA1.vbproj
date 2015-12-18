@@ -145,6 +145,12 @@
     <Compile Include="Ex20bucles.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ExamenArrays.Designer.vb">
+      <DependentUpon>ExamenArrays.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExamenArrays.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ExArrays1a20.Designer.vb">
       <DependentUpon>ExArrays1a20.vb</DependentUpon>
     </Compile>
@@ -275,6 +281,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ex20bucles.resx">
       <DependentUpon>Ex20bucles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExamenArrays.resx">
+      <DependentUpon>ExamenArrays.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExArrays1a20.resx">
       <DependentUpon>ExArrays1a20.vb</DependentUpon>

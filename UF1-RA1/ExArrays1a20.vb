@@ -4,7 +4,7 @@
         Dim cnt As Integer
         Dim cuadrado As Integer
         Dim cubo As Integer
-        Dim salida As String = 0
+        Dim salida As String = ""
         For cnt = 0 To 9
             numeros(cnt) = InputBox("Introduce un número entero")
         Next
@@ -13,7 +13,7 @@
             cubo = numeros(cnt) ^ 3
             salida = salida(numeros(cnt).ToString + " " + cuadrado.ToString() + " " + cubo.ToString() + " " + Environment.NewLine())
         Next
-        MessageBox.Show(salida.ToString)
+        MessageBox.Show(salida)
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -109,18 +109,17 @@
         Dim origen() As Integer = {1, 4, 10, 32, 60, 91, 34, 56, 73, 88, 86}
         Dim destino As Integer
         Dim cnt As Integer
-        Dim salida As String = " "
-        destino = origen(0)
+        Dim salida As String = ""
+
 
         For origen(cnt) = 0 To 10
             If origen(cnt) > 25 Mod 2 = 0 Then
                 destino = origen(cnt)
-                salida = salida + (origen(cnt).ToString + " " + destino.ToString())
 
             End If
-            MessageBox.Show(salida)
-        Next
 
+        Next
+        MessageBox.Show(salida)
     End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
@@ -132,8 +131,12 @@
         For i = 0 To 9
             For j = 0 To 9
                 tabla(i, j) = r.Next(0, 100)
+                salida = salida + tabla(i, j).ToString + "  "
             Next
+            salida = salida + vbNewLine
+
         Next
+
         For i = 0 To 9
             For j = 0 To 9
                 If i Mod 2 = 0 Then
@@ -141,9 +144,9 @@
                 Else
                     i = 0
                 End If
-
+                salida = salida + tabla(i, j).ToString + "  "
             Next
-            salida = salida + tabla(i, j).ToString + " "
+            salida = salida + vbNewLine
         Next
         MessageBox.Show(salida)
     End Sub
@@ -153,8 +156,9 @@
         Dim i, j As Integer
         Dim r As New Random()
         Dim salida As String = ""
-        Dim suma As Integer
-        Dim cnt As Integer
+        Dim sumalinea As Integer
+        Dim sumacolumna As Integer
+
 
         For i = 0 To 9
             For j = 0 To 9
@@ -162,9 +166,73 @@
             Next
         Next
         For i = 0 To 9
-            For j = 0 To 9
+            sumalinea = sumalinea + matriz(i, j)
+        Next
 
-            Next
+        For j = 0 To 9
+            sumacolumna = sumacolumna + matriz(j, i)
+
+        Next
+        MessageBox.Show(salida = "La linea de la matriz suma " + sumalinea.ToString() + "La suma de la columna suma  " + sumacolumna.ToString() + " ")
+
+
+
+
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        Dim i, j As Integer
+        Dim marco(4, 14) As Integer
+        Dim salida As String = ""
+
+        For i = 0 To 4
+            For j = 0 To 14
+                If i >= 1 And i <= 3 And j >= 1 And j <= 13 Then
+                    marco(i, j) = 0
+                Else
+                    marco(i, j) = 1
+                End If
+                salida = salida + marco(i, j).ToString + " "
+                Next
+                salida = salida + vbNewLine
+        Next
+        MessageBox.Show(salida)
+    End Sub
+
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+        Dim vector(9), cnt, par, impar, suma As Integer
+
+        Dim salida As String = ""
+
+        For cnt = 0 To 9
+            vector(cnt) = InputBox("Introduce un número entero")
+        Next
+        For cnt = 0 To 9
+            If vector(cnt) Mod 2 = 0 Then
+                vector(cnt) = par
+
+            Else
+                vector(cnt) = impar
+
+            End If
+
+            suma = suma + vector(cnt).ToString() + impar.ToString() + par.ToString() + ""
+            salida = salida + suma.ToString + "  "
+        Next
+        MessageBox.Show(salida)
+
+
+
+    End Sub
+
+    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+        Dim vector(4), suma, sumap, cnt As Integer
+        Dim salida As String = ""
+        For cnt = 0 To 4
+            vector(cnt) = InputBox("Introduce un número entero: ")
+        Next
+        For cnt = 0 To 4
+            sumap = suma
         Next
     End Sub
 End Class
