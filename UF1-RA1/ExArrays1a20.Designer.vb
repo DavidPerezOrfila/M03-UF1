@@ -50,6 +50,7 @@ Partial Class ExArrays1a20
         Me.Button26 = New System.Windows.Forms.Button()
         Me.Button27 = New System.Windows.Forms.Button()
         Me.Button28 = New System.Windows.Forms.Button()
+        Me.Button29 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -279,7 +280,7 @@ Partial Class ExArrays1a20
         '
         'Button26
         '
-        Me.Button26.Location = New System.Drawing.Point(206, 226)
+        Me.Button26.Location = New System.Drawing.Point(206, 255)
         Me.Button26.Name = "Button26"
         Me.Button26.Size = New System.Drawing.Size(75, 23)
         Me.Button26.TabIndex = 25
@@ -288,7 +289,7 @@ Partial Class ExArrays1a20
         '
         'Button27
         '
-        Me.Button27.Location = New System.Drawing.Point(206, 255)
+        Me.Button27.Location = New System.Drawing.Point(206, 226)
         Me.Button27.Name = "Button27"
         Me.Button27.Size = New System.Drawing.Size(75, 23)
         Me.Button27.TabIndex = 26
@@ -304,11 +305,21 @@ Partial Class ExArrays1a20
         Me.Button28.Text = "Altura"
         Me.Button28.UseVisualStyleBackColor = True
         '
+        'Button29
+        '
+        Me.Button29.Location = New System.Drawing.Point(206, 313)
+        Me.Button29.Name = "Button29"
+        Me.Button29.Size = New System.Drawing.Size(85, 23)
+        Me.Button29.TabIndex = 28
+        Me.Button29.Text = "Bidimensional"
+        Me.Button29.UseVisualStyleBackColor = True
+        '
         'ExArrays1a20
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(353, 549)
+        Me.Controls.Add(Me.Button29)
         Me.Controls.Add(Me.Button28)
         Me.Controls.Add(Me.Button27)
         Me.Controls.Add(Me.Button26)
@@ -371,4 +382,5 @@ Partial Class ExArrays1a20
     Friend WithEvents Button26 As Button
     Friend WithEvents Button27 As Button
     Friend WithEvents Button28 As Button
+    Friend WithEvents Button29 As Button
 End Class

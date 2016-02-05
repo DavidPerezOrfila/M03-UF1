@@ -2,17 +2,18 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim numeros(9) As Integer
         Dim cnt As Integer
-        Dim cuadrado As Integer
-        Dim cubo As Integer
+        Dim cuadrado(9) As Integer
+        Dim cubo(9) As Integer
         Dim salida As String = ""
         For cnt = 0 To 9
             numeros(cnt) = InputBox("Introduce un número entero")
         Next
         For cnt = 0 To 9
-            cuadrado = numeros(cnt) ^ 2
-            cubo = numeros(cnt) ^ 3
-            salida = salida(numeros(cnt).ToString + " " + cuadrado.ToString() + " " + cubo.ToString() + " " + Environment.NewLine())
+            cuadrado(cnt) = numeros(cnt) * numeros(cnt)
+            cubo(cnt) = numeros(cnt) * numeros(cnt) * numeros(cnt)
+            salida = (numeros(cnt).ToString + " " + cuadrado.ToString() + " " + cubo.ToString() + " " + Environment.NewLine)
         Next
+
 
         MessageBox.Show(salida)
     End Sub
@@ -28,8 +29,9 @@
         For vector(cnt) = 0 To 14
 
             vector(cnt) = r.Next(n1, n2)
+            suma = suma + (vector(cnt).ToString + Environment.NewLine)
         Next
-        suma = suma + (vector(cnt).ToString + Environment.NewLine)
+
         MessageBox.Show(suma)
     End Sub
 
@@ -68,24 +70,25 @@
                 End If
 
             Next
-
+            salida = salida + tabla(i, j).ToString + "  "
         Next
-
-
+        MessageBox.Show(salida)
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Dim i, j As Integer
         Dim tabla(2, 2) As Integer
         Dim r As New Random()
+        Dim salida = ""
         For i = 0 To 2
             For j = 0 To 2
                 If i = j Then
                     tabla(i, j) = r.Next(0, 100) 'random entre 0 y 100
                 End If
             Next
-
+            salida = salida + tabla(i, j).ToString + "  "
         Next
+        MessageBox.Show(salida)
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
@@ -107,16 +110,24 @@
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         Dim origen() As Integer = {1, 4, 10, 32, 60, 91, 34, 56, 73, 88, 86}
-        Dim destino As Integer
-        Dim cnt As Integer
+        Dim destino(10) As Integer
+        Dim cnt, cnt2 As Integer
         Dim salida As String = ""
+        Dim salidades As String = ""
 
+        cnt2 = 0
 
         For origen(cnt) = 0 To 10
-            If origen(cnt) > 25 Mod 2 = 0 Then
-                destino = origen(cnt)
+            salida += origen(cnt).ToString
+        Next
+        For origen(cnt) = 0 To 10
+            If origen(cnt) > 25 And origen(cnt) Mod 2 = 0 Then
+                destino(cnt2) = origen(cnt)
+                salidades += destino(cnt2).ToString + " "
+                cnt2 = cnt2 + 1
 
             End If
+
 
         Next
         MessageBox.Show(salida)
@@ -516,21 +527,22 @@
     End Sub
 
     Private Sub Button25_Click(sender As Object, e As EventArgs) Handles Button25.Click
-        Dim limint(4), limsup(4), sm, pe, total, cnt As Integer
-        Dim sa(4) As Integer
-        Dim pct() As Integer = {1.05, 1.12, 1.15, 1.22, 1.3}
+        Dim liminf(), limsup(), sa, sm, pa, cnt As Integer
+        Dim pct() As Integer = {5, 12, 15, 22, 30}
         Dim salida As String = ""
         sm = InputBox("Introduce tu salario mensual: ")
-        pe = InputBox("Introduce el número de pagas extras ")
-        total = (sm * 12) * pe
-        sa(0) = 1000000
+        pa = InputBox("Introduce el número de pagas anuales")
+        liminf = {0, 1000000, 2500001, 3800001, 6000001}
+        limsup = {1000001, 3800000, 6000000}
         For cnt = 0 To 4
-            If total = sa(0) Then
-
-
+            If sa >= liminf(cnt) And sa <= limsup(cnt) Then
+                salida += pct(cnt).ToString
+                Exit For
+            ElseIf sa Then
+                salida += pct(4).ToString
             End If
         Next
-
+        MessageBox.Show(salida)
     End Sub
 
     Private Sub Button26_Click(sender As Object, e As EventArgs) Handles Button26.Click
@@ -593,6 +605,20 @@
                 salidaa += "son más altos que la media: " + altura(cnt).ToString + vbNewLine
             End If
             salida += media.ToString + ", " + menor.ToString + ", " + mayor.ToString + ", " + salidab + ", " + salidaa + vbNewLine
+        Next
+        MessageBox.Show(salida)
+    End Sub
+
+    Private Sub Button29_Click(sender As Object, e As EventArgs) Handles Button29.Click
+        Dim tabla(4, 4) As Integer
+        Dim i, j As Integer
+        Dim salida As String = " "
+        Dim r As New Random()
+        For i = 0 To 4
+            For j = 0 To 4
+                tabla(i, j) = r.Next(0, 10)
+                salida += tabla(i, j).ToString
+            Next
         Next
         MessageBox.Show(salida)
     End Sub
