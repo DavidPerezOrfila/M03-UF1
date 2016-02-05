@@ -42,6 +42,14 @@ Partial Class ExArrays1a20
         Me.Button18 = New System.Windows.Forms.Button()
         Me.Button19 = New System.Windows.Forms.Button()
         Me.Button20 = New System.Windows.Forms.Button()
+        Me.Button21 = New System.Windows.Forms.Button()
+        Me.Button22 = New System.Windows.Forms.Button()
+        Me.Button23 = New System.Windows.Forms.Button()
+        Me.Button24 = New System.Windows.Forms.Button()
+        Me.Button25 = New System.Windows.Forms.Button()
+        Me.Button26 = New System.Windows.Forms.Button()
+        Me.Button27 = New System.Windows.Forms.Button()
+        Me.Button28 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -224,11 +232,91 @@ Partial Class ExArrays1a20
         Me.Button20.Text = "Ex15Arrays"
         Me.Button20.UseVisualStyleBackColor = True
         '
+        'Button21
+        '
+        Me.Button21.Location = New System.Drawing.Point(12, 447)
+        Me.Button21.Name = "Button21"
+        Me.Button21.Size = New System.Drawing.Size(75, 23)
+        Me.Button21.TabIndex = 20
+        Me.Button21.Text = "Ex16Arrays"
+        Me.Button21.UseVisualStyleBackColor = True
+        '
+        'Button22
+        '
+        Me.Button22.Location = New System.Drawing.Point(12, 476)
+        Me.Button22.Name = "Button22"
+        Me.Button22.Size = New System.Drawing.Size(75, 23)
+        Me.Button22.TabIndex = 21
+        Me.Button22.Text = "Ex17Arrays"
+        Me.Button22.UseVisualStyleBackColor = True
+        '
+        'Button23
+        '
+        Me.Button23.Location = New System.Drawing.Point(206, 168)
+        Me.Button23.Name = "Button23"
+        Me.Button23.Size = New System.Drawing.Size(100, 23)
+        Me.Button23.TabIndex = 22
+        Me.Button23.Text = "Practica1Arrays"
+        Me.Button23.UseVisualStyleBackColor = True
+        '
+        'Button24
+        '
+        Me.Button24.Location = New System.Drawing.Point(206, 197)
+        Me.Button24.Name = "Button24"
+        Me.Button24.Size = New System.Drawing.Size(100, 23)
+        Me.Button24.TabIndex = 23
+        Me.Button24.Text = "BuscarElementos"
+        Me.Button24.UseVisualStyleBackColor = True
+        '
+        'Button25
+        '
+        Me.Button25.Location = New System.Drawing.Point(12, 505)
+        Me.Button25.Name = "Button25"
+        Me.Button25.Size = New System.Drawing.Size(75, 23)
+        Me.Button25.TabIndex = 24
+        Me.Button25.Text = "Ex18Arrays"
+        Me.Button25.UseVisualStyleBackColor = True
+        '
+        'Button26
+        '
+        Me.Button26.Location = New System.Drawing.Point(206, 226)
+        Me.Button26.Name = "Button26"
+        Me.Button26.Size = New System.Drawing.Size(75, 23)
+        Me.Button26.TabIndex = 25
+        Me.Button26.Text = "Fibo"
+        Me.Button26.UseVisualStyleBackColor = True
+        '
+        'Button27
+        '
+        Me.Button27.Location = New System.Drawing.Point(206, 255)
+        Me.Button27.Name = "Button27"
+        Me.Button27.Size = New System.Drawing.Size(75, 23)
+        Me.Button27.TabIndex = 26
+        Me.Button27.Text = "Cuadrado"
+        Me.Button27.UseVisualStyleBackColor = True
+        '
+        'Button28
+        '
+        Me.Button28.Location = New System.Drawing.Point(206, 284)
+        Me.Button28.Name = "Button28"
+        Me.Button28.Size = New System.Drawing.Size(75, 23)
+        Me.Button28.TabIndex = 27
+        Me.Button28.Text = "Altura"
+        Me.Button28.UseVisualStyleBackColor = True
+        '
         'ExArrays1a20
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(353, 549)
+        Me.Controls.Add(Me.Button28)
+        Me.Controls.Add(Me.Button27)
+        Me.Controls.Add(Me.Button26)
+        Me.Controls.Add(Me.Button25)
+        Me.Controls.Add(Me.Button24)
+        Me.Controls.Add(Me.Button23)
+        Me.Controls.Add(Me.Button22)
+        Me.Controls.Add(Me.Button21)
         Me.Controls.Add(Me.Button20)
         Me.Controls.Add(Me.Button19)
         Me.Controls.Add(Me.Button18)
@@ -275,4 +363,12 @@ Partial Class ExArrays1a20
     Friend WithEvents Button18 As Button
     Friend WithEvents Button19 As Button
     Friend WithEvents Button20 As Button
+    Friend WithEvents Button21 As Button
+    Friend WithEvents Button22 As Button
+    Friend WithEvents Button23 As Button
+    Friend WithEvents Button24 As Button
+    Friend WithEvents Button25 As Button
+    Friend WithEvents Button26 As Button
+    Friend WithEvents Button27 As Button
+    Friend WithEvents Button28 As Button
 End Class
