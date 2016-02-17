@@ -1,4 +1,8 @@
 ﻿Public Class Calculadora
+    Dim n1 As Double
+    Dim n2 As Double
+
+    Dim salida As String = ""
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
         TextBox1.Text = TextBox1.Text & 4
     End Sub
@@ -8,7 +12,7 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
+        TextBox1.Text = ""
     End Sub
 
     Private Sub Calculadora_Load(sender As Object, e As EventArgs) Handles MyBase.Load
