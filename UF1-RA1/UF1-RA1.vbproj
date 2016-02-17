@@ -133,6 +133,12 @@
     <Compile Include="Bucle_Pares.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Calculadora.Designer.vb">
+      <DependentUpon>Calculadora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Calculadora.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ejercicios11a19bucles.Designer.vb">
       <DependentUpon>Ejercicios11a19bucles.vb</DependentUpon>
     </Compile>
@@ -275,6 +281,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Bucle_Pares.resx">
       <DependentUpon>Bucle_Pares.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculadora.resx">
+      <DependentUpon>Calculadora.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ejercicios11a19bucles.resx">
       <DependentUpon>Ejercicios11a19bucles.vb</DependentUpon>

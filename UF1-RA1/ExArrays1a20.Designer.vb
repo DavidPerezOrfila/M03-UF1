@@ -51,6 +51,8 @@ Partial Class ExArrays1a20
         Me.Button27 = New System.Windows.Forms.Button()
         Me.Button28 = New System.Windows.Forms.Button()
         Me.Button29 = New System.Windows.Forms.Button()
+        Me.Button30 = New System.Windows.Forms.Button()
+        Me.Button31 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -314,11 +316,31 @@ Partial Class ExArrays1a20
         Me.Button29.Text = "Bidimensional"
         Me.Button29.UseVisualStyleBackColor = True
         '
+        'Button30
+        '
+        Me.Button30.Location = New System.Drawing.Point(206, 342)
+        Me.Button30.Name = "Button30"
+        Me.Button30.Size = New System.Drawing.Size(100, 23)
+        Me.Button30.TabIndex = 29
+        Me.Button30.Text = "vecinos tabla"
+        Me.Button30.UseVisualStyleBackColor = True
+        '
+        'Button31
+        '
+        Me.Button31.Location = New System.Drawing.Point(206, 371)
+        Me.Button31.Name = "Button31"
+        Me.Button31.Size = New System.Drawing.Size(75, 23)
+        Me.Button31.TabIndex = 30
+        Me.Button31.Text = "FACTORIAL"
+        Me.Button31.UseVisualStyleBackColor = True
+        '
         'ExArrays1a20
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(353, 549)
+        Me.Controls.Add(Me.Button31)
+        Me.Controls.Add(Me.Button30)
         Me.Controls.Add(Me.Button29)
         Me.Controls.Add(Me.Button28)
         Me.Controls.Add(Me.Button27)
@@ -383,4 +405,6 @@ Partial Class ExArrays1a20
     Friend WithEvents Button27 As Button
     Friend WithEvents Button28 As Button
     Friend WithEvents Button29 As Button
+    Friend WithEvents Button30 As Button
+    Friend WithEvents Button31 As Button
 End Class

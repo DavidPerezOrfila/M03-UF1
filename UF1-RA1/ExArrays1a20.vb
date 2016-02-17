@@ -1,21 +1,25 @@
 ﻿Public Class ExArrays1a20
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim numeros(9) As Integer
+        Dim num(9) As Double
         Dim cnt As Integer
-        Dim cuadrado(9) As Integer
-        Dim cubo(9) As Integer
-        Dim salida As String = ""
+        Dim cuadrado(9) As Double
+        Dim cubo(9) As Double
+        Dim salida2 As String = ""
+        Dim salida3 As String = ""
         For cnt = 0 To 9
-            numeros(cnt) = InputBox("Introduce un número entero")
+            num(cnt) = InputBox("Introduce un número entero")
         Next
         For cnt = 0 To 9
-            cuadrado(cnt) = numeros(cnt) * numeros(cnt)
-            cubo(cnt) = numeros(cnt) * numeros(cnt) * numeros(cnt)
-            salida = (numeros(cnt).ToString + " " + cuadrado.ToString() + " " + cubo.ToString() + " " + Environment.NewLine)
+            cuadrado(cnt) = num(cnt) * num(cnt)
+            salida2 += num(cnt).ToString + " Su cuadrado es= " + cuadrado(cnt).ToString + vbNewLine
+        Next
+        For cnt = 0 To 9
+            cubo(cnt) = num(cnt) * num(cnt) * num(cnt)
+            salida3 += num(cnt).ToString + " Su cubo es= " + cubo(cnt).ToString + vbNewLine
         Next
 
 
-        MessageBox.Show(salida)
+        MessageBox.Show(salida2 + vbNewLine + salida3 + " ")
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -578,35 +582,43 @@
     End Sub
 
     Private Sub Button28_Click(sender As Object, e As EventArgs) Handles Button28.Click
-        Dim altura(9), mayor, menor, media As Double
-        Dim cnt As Integer
+        Dim mayor, menor, media As Double
+        Dim n, cnt As Integer
         Dim salida As String = ""
-        Dim salidaa As String = ""
-        Dim salidab As String = ""
+        Dim alto As String = ""
+        Dim bajo As String = ""
         Dim salidamay As String = ""
         Dim salidamen As String = ""
-        For cnt = 0 To 9
-            altura(cnt) = InputBox("Introduce una altura")
+
+        n = InputBox("Introduce número de personas")
+        Dim altura(n) As Double
+        For cnt = 0 To n - 1
+            altura(cnt) = InputBox("Introduce alturas: ")
+            media = media + altura(cnt)
         Next
-        altura(0) = mayor
-        altura(0) = menor
-        For cnt = 1 To 9
+        media = media / n
+        menor = altura(0)
+        mayor = altura(0)
+
+        For cnt = 0 To n - 1
             If altura(cnt) < menor Then
                 menor = altura(cnt)
-
             ElseIf altura(cnt) > mayor Then
                 mayor = altura(cnt)
 
             End If
-            media += altura(cnt).ToString / 10
-            If altura(cnt) < media Then
-                salidab += "Son más bajos que la media: " + altura(cnt).ToString + vbNewLine
-            ElseIf altura(cnt) > media Then
-                salidaa += "son más altos que la media: " + altura(cnt).ToString + vbNewLine
-            End If
-            salida += media.ToString + ", " + menor.ToString + ", " + mayor.ToString + ", " + salidab + ", " + salidaa + vbNewLine
         Next
-        MessageBox.Show(salida)
+        For cnt = 0 To n - 1
+
+            If altura(cnt) < media Then
+                bajo += altura(cnt).ToString + " "
+            ElseIf altura(cnt) > media Then
+                alto += altura(cnt).ToString + " "
+            End If
+
+
+        Next
+        MessageBox.Show("La estatura media es: " + media.ToString + vbNewLine + "La altura menor es:  " + menor.ToString + vbNewLine + "La altura mayor es:  " + mayor.ToString + vbNewLine + "Las alturas más bajas que la media son: " + bajo + vbNewLine + "Las alturas más altas que la media son: " + alto + vbNewLine)
     End Sub
 
     Private Sub Button29_Click(sender As Object, e As EventArgs) Handles Button29.Click
@@ -621,6 +633,41 @@
             Next
         Next
         MessageBox.Show(salida)
+    End Sub
+
+    Private Sub Button30_Click(sender As Object, e As EventArgs) Handles Button30.Click
+        'Suma todos los elementos de una tabla. Dí que elementos de una tabla tiene la mayor suma de sus vecinos
+        Dim i, j, tabla(3, 3), cnt As Integer
+        Dim r As New Random()
+        Dim salida As String = ""
+        For i = 0 To 3
+            For j = 0 To 3
+                tabla(i, j) = r.Next(0, 10)
+                salida += tabla(i, j).ToString
+            Next
+            salida += vbNewLine
+        Next
+        For i = 0 To 3
+            For j = 0 To 3
+
+            Next
+        Next
+        MessageBox.Show(salida)
+    End Sub
+
+    Private Sub Button24_Click(sender As Object, e As EventArgs) Handles Button24.Click
+
+    End Sub
+
+    Private Sub Button31_Click(sender As Object, e As EventArgs) Handles Button31.Click
+        Dim Num As Integer
+        Dim cnt As Integer
+        Dim factorial As Integer = 1
+        Num = InputBox("Introduce un número")
+        For cnt = 1 To Num
+            factorial = factorial * cnt
+        Next
+        MessageBox.Show(factorial)
     End Sub
 End Class
 
