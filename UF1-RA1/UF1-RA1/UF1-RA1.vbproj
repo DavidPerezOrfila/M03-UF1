@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{708C976B-07B2-4B98-A494-2B363A01E335}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>UF1_RA1.My.MyApplication</StartupObject>
+    <RootNamespace>UF1_RA1</RootNamespace>
+    <AssemblyName>UF1-RA1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>UF1-RA1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>UF1-RA1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C6447D2EBABFF38E2AE870108C860728C47502A9</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>UF1-RA1_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\UF1-RA1.Designer.vb">
+      <DependentUpon>UF1-RA1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\UF1-RA1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdivinarN.Designer.vb">
+      <DependentUpon>AdivinarN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdivinarN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArraysNotasAlumnos.Designer.vb">
+      <DependentUpon>ArraysNotasAlumnos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ArraysNotasAlumnos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bucle_Pares.Designer.vb">
+      <DependentUpon>Bucle_Pares.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bucle_Pares.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculadora.Designer.vb">
+      <DependentUpon>Calculadora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Calculadora.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ejercicios11a19bucles.Designer.vb">
+      <DependentUpon>Ejercicios11a19bucles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicios11a19bucles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ex20bucles.Designer.vb">
+      <DependentUpon>Ex20bucles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ex20bucles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExamenArrays.Designer.vb">
+      <DependentUpon>ExamenArrays.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExamenArrays.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExArrays1a20.Designer.vb">
+      <DependentUpon>ExArrays1a20.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExArrays1a20.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exercici2Divisible.Designer.vb">
+      <DependentUpon>Exercici2Divisible.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Exercici2Divisible.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exercici3Max_Min.Designer.vb">
+      <DependentUpon>Exercici3Max_Min.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Exercici3Max_Min.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exercici5_NotaAlumne.Designer.vb">
+      <DependentUpon>Exercici5_NotaAlumne.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Exercici5_NotaAlumne.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exercici8_NotaSelectCase.Designer.vb">
+      <DependentUpon>Exercici8_NotaSelectCase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Exercici8_NotaSelectCase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exercici9_Calendari.Designer.vb">
+      <DependentUpon>Exercici9_Calendari.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Exercici9_Calendari.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notas array.Designer.vb">
+      <DependentUpon>Notas array.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Notas array.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Semana.Designer.vb">
+      <DependentUpon>Semana.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Semana.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Semanaifelse.Designer.vb">
+      <DependentUpon>Semanaifelse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Semanaifelse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sumacien.Designer.vb">
+      <DependentUpon>sumacien.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sumacien.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablamultiplicar.Designer.vb">
+      <DependentUpon>Tablamultiplicar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tablamultiplicar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="estructurasdecision.Designer.vb">
+      <DependentUpon>estructurasdecision.vb</DependentUpon>
+    </Compile>
+    <Compile Include="estructurasdecision.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpresionesBooleanas.Designer.vb">
+      <DependentUpon>ExpresionesBooleanas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExpresionesBooleanas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menorque.Designer.vb">
+      <DependentUpon>menorque.vb</DependentUpon>
+    </Compile>
+    <Compile Include="menorque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aleatorio.Designer.vb">
+      <DependentUpon>Aleatorio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Aleatorio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="VocalConsonante.Designer.vb">
+      <DependentUpon>VocalConsonante.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VocalConsonante.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\UF1-RA1.resx">
+      <DependentUpon>UF1-RA1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdivinarN.resx">
+      <DependentUpon>AdivinarN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArraysNotasAlumnos.resx">
+      <DependentUpon>ArraysNotasAlumnos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bucle_Pares.resx">
+      <DependentUpon>Bucle_Pares.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculadora.resx">
+      <DependentUpon>Calculadora.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ejercicios11a19bucles.resx">
+      <DependentUpon>Ejercicios11a19bucles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ex20bucles.resx">
+      <DependentUpon>Ex20bucles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExamenArrays.resx">
+      <DependentUpon>ExamenArrays.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExArrays1a20.resx">
+      <DependentUpon>ExArrays1a20.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exercici2Divisible.resx">
+      <DependentUpon>Exercici2Divisible.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exercici3Max_Min.resx">
+      <DependentUpon>Exercici3Max_Min.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exercici5_NotaAlumne.resx">
+      <DependentUpon>Exercici5_NotaAlumne.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exercici8_NotaSelectCase.resx">
+      <DependentUpon>Exercici8_NotaSelectCase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exercici9_Calendari.resx">
+      <DependentUpon>Exercici9_Calendari.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notas array.resx">
+      <DependentUpon>Notas array.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Semana.resx">
+      <DependentUpon>Semana.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Semanaifelse.resx">
+      <DependentUpon>Semanaifelse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sumacien.resx">
+      <DependentUpon>sumacien.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablamultiplicar.resx">
+      <DependentUpon>Tablamultiplicar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="estructurasdecision.resx">
+      <DependentUpon>estructurasdecision.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpresionesBooleanas.resx">
+      <DependentUpon>ExpresionesBooleanas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menorque.resx">
+      <DependentUpon>menorque.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aleatorio.resx">
+      <DependentUpon>Aleatorio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VocalConsonante.resx">
+      <DependentUpon>VocalConsonante.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

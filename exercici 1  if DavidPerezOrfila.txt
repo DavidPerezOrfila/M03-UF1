@@ -1,0 +1,14 @@
+1. Quines són les diferències entre aquest dos conjunts d'instruccións? quin és el valor final de la variable x si inicialment val 0?
+
+if(x >=0)
+	x=x+1;
+else if (x >=1);
+	x += 2;
+
+
+if (x >=0)
+	x=x+1;
+if (x >=1)
+	x += 2;
+En el primer cas mostrarà el valor de la variable si es cero i sumarà un; en cas de que sigui major o igual a 1 mostrarà el resultat de dos en dos
+En el segon cas mostrarà el mateix ja que es compleix la mateixa sentència
