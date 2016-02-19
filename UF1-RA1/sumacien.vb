@@ -123,7 +123,7 @@
     Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
         Dim N1 As Integer
         Dim N2 As Integer
-        Dim cnt As Integer
+
         Dim intervalo As Integer
         Dim SUMA As Integer = 0
         N1 = InputBox("Introduce un número")

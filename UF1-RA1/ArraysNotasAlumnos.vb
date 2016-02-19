@@ -48,7 +48,7 @@
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Dim numeros(4) As Integer
         Dim cnt As Integer
-        Dim buscar As Boolean
+        Dim buscar As Boolean = True
         numeros(cnt) = InputBox("")
 
     End Sub

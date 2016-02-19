@@ -637,7 +637,7 @@
 
     Private Sub Button30_Click(sender As Object, e As EventArgs) Handles Button30.Click
         'Suma todos los elementos de una tabla. Dí que elementos de una tabla tiene la mayor suma de sus vecinos
-        Dim i, j, tabla(3, 3), cnt As Integer
+        Dim i, j, tabla(3, 3) As Integer
         Dim r As New Random()
         Dim salida As String = ""
         For i = 0 To 3
