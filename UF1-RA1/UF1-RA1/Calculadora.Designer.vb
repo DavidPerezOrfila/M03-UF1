@@ -39,6 +39,10 @@ Partial Class Calculadora
         Me.Button15 = New System.Windows.Forms.Button()
         Me.Button17 = New System.Windows.Forms.Button()
         Me.Button20 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button16 = New System.Windows.Forms.Button()
+        Me.Button18 = New System.Windows.Forms.Button()
+        Me.Button19 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'TextBox1
@@ -53,7 +57,7 @@ Partial Class Calculadora
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(106, 192)
+        Me.Button1.Location = New System.Drawing.Point(25, 71)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 1
@@ -62,7 +66,7 @@ Partial Class Calculadora
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(268, 192)
+        Me.Button2.Location = New System.Drawing.Point(268, 71)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 2
@@ -71,7 +75,7 @@ Partial Class Calculadora
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(268, 146)
+        Me.Button3.Location = New System.Drawing.Point(268, 100)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 3
@@ -80,7 +84,7 @@ Partial Class Calculadora
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(25, 64)
+        Me.Button5.Location = New System.Drawing.Point(187, 100)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(75, 23)
         Me.Button5.TabIndex = 5
@@ -89,7 +93,7 @@ Partial Class Calculadora
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(106, 64)
+        Me.Button6.Location = New System.Drawing.Point(106, 100)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(75, 23)
         Me.Button6.TabIndex = 6
@@ -98,7 +102,7 @@ Partial Class Calculadora
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(187, 64)
+        Me.Button7.Location = New System.Drawing.Point(25, 100)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(75, 23)
         Me.Button7.TabIndex = 7
@@ -107,7 +111,7 @@ Partial Class Calculadora
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(268, 104)
+        Me.Button8.Location = New System.Drawing.Point(268, 129)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(75, 23)
         Me.Button8.TabIndex = 8
@@ -116,7 +120,7 @@ Partial Class Calculadora
         '
         'Button9
         '
-        Me.Button9.Location = New System.Drawing.Point(25, 104)
+        Me.Button9.Location = New System.Drawing.Point(187, 129)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(75, 23)
         Me.Button9.TabIndex = 9
@@ -125,7 +129,7 @@ Partial Class Calculadora
         '
         'Button10
         '
-        Me.Button10.Location = New System.Drawing.Point(106, 104)
+        Me.Button10.Location = New System.Drawing.Point(106, 129)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(75, 23)
         Me.Button10.TabIndex = 10
@@ -134,7 +138,7 @@ Partial Class Calculadora
         '
         'Button11
         '
-        Me.Button11.Location = New System.Drawing.Point(187, 104)
+        Me.Button11.Location = New System.Drawing.Point(25, 129)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(75, 23)
         Me.Button11.TabIndex = 11
@@ -143,7 +147,7 @@ Partial Class Calculadora
         '
         'Button12
         '
-        Me.Button12.Location = New System.Drawing.Point(268, 64)
+        Me.Button12.Location = New System.Drawing.Point(268, 158)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(75, 23)
         Me.Button12.TabIndex = 12
@@ -152,7 +156,7 @@ Partial Class Calculadora
         '
         'Button13
         '
-        Me.Button13.Location = New System.Drawing.Point(25, 146)
+        Me.Button13.Location = New System.Drawing.Point(25, 158)
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(75, 23)
         Me.Button13.TabIndex = 13
@@ -161,7 +165,7 @@ Partial Class Calculadora
         '
         'Button14
         '
-        Me.Button14.Location = New System.Drawing.Point(106, 146)
+        Me.Button14.Location = New System.Drawing.Point(106, 158)
         Me.Button14.Name = "Button14"
         Me.Button14.Size = New System.Drawing.Size(75, 23)
         Me.Button14.TabIndex = 14
@@ -170,7 +174,7 @@ Partial Class Calculadora
         '
         'Button15
         '
-        Me.Button15.Location = New System.Drawing.Point(187, 146)
+        Me.Button15.Location = New System.Drawing.Point(187, 158)
         Me.Button15.Name = "Button15"
         Me.Button15.Size = New System.Drawing.Size(75, 23)
         Me.Button15.TabIndex = 15
@@ -179,7 +183,7 @@ Partial Class Calculadora
         '
         'Button17
         '
-        Me.Button17.Location = New System.Drawing.Point(25, 192)
+        Me.Button17.Location = New System.Drawing.Point(106, 187)
         Me.Button17.Name = "Button17"
         Me.Button17.Size = New System.Drawing.Size(75, 23)
         Me.Button17.TabIndex = 17
@@ -188,18 +192,58 @@ Partial Class Calculadora
         '
         'Button20
         '
-        Me.Button20.Location = New System.Drawing.Point(187, 192)
+        Me.Button20.Location = New System.Drawing.Point(268, 187)
         Me.Button20.Name = "Button20"
         Me.Button20.Size = New System.Drawing.Size(75, 23)
         Me.Button20.TabIndex = 20
         Me.Button20.Text = "="
         Me.Button20.UseVisualStyleBackColor = True
         '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(25, 187)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.TabIndex = 21
+        Me.Button4.Text = "."
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button16
+        '
+        Me.Button16.Location = New System.Drawing.Point(187, 71)
+        Me.Button16.Name = "Button16"
+        Me.Button16.Size = New System.Drawing.Size(75, 23)
+        Me.Button16.TabIndex = 22
+        Me.Button16.Text = "X^Y"
+        Me.Button16.UseVisualStyleBackColor = True
+        '
+        'Button18
+        '
+        Me.Button18.Location = New System.Drawing.Point(187, 187)
+        Me.Button18.Name = "Button18"
+        Me.Button18.Size = New System.Drawing.Size(75, 23)
+        Me.Button18.TabIndex = 23
+        Me.Button18.Text = "+/-"
+        Me.Button18.UseVisualStyleBackColor = True
+        '
+        'Button19
+        '
+        Me.Button19.Location = New System.Drawing.Point(106, 71)
+        Me.Button19.Name = "Button19"
+        Me.Button19.Size = New System.Drawing.Size(75, 23)
+        Me.Button19.TabIndex = 24
+        Me.Button19.Text = "X^2"
+        Me.Button19.UseVisualStyleBackColor = True
+        '
         'Calculadora
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(365, 236)
+        Me.ClientSize = New System.Drawing.Size(375, 232)
+        Me.Controls.Add(Me.Button19)
+        Me.Controls.Add(Me.Button18)
+        Me.Controls.Add(Me.Button16)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button20)
         Me.Controls.Add(Me.Button17)
         Me.Controls.Add(Me.Button15)
@@ -243,4 +287,8 @@ Partial Class Calculadora
     Friend WithEvents Button15 As Button
     Friend WithEvents Button17 As Button
     Friend WithEvents Button20 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button16 As Button
+    Friend WithEvents Button18 As Button
+    Friend WithEvents Button19 As Button
 End Class

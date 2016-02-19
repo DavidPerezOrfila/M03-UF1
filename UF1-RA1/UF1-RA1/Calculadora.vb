@@ -1,6 +1,7 @@
 ﻿Public Class Calculadora
     Dim n1 As Double
     Dim n2 As Double
+    Dim dec As Double = 0
     Dim operador As Double
     Dim resultado As Double
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
@@ -60,7 +61,7 @@
     End Sub
 
     Private Sub Button20_Click(sender As Object, e As EventArgs) Handles Button20.Click
-        n2 = TextBox1.Text
+        n2 = CDbl(TextBox1.Text)
         Select Case operador
             Case 1
                 resultado = n1 + n2
@@ -70,6 +71,8 @@
                 resultado = n1 * n2
             Case 4
                 resultado = n1 / n2
+            Case 5
+                resultado = n1 ^ n2
         End Select
         TextBox1.Text = resultado
         operador = 0
@@ -78,25 +81,52 @@
 
     Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
         operador = 1
-        n1 = TextBox1.Text
+        n1 = CDbl(TextBox1.Text)
+        dec = 0
         TextBox1.Clear()
     End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
         operador = 2
-        n1 = TextBox1.Text
+        n1 = CDbl(TextBox1.Text)
+        dec = 0
         TextBox1.Clear()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         operador = 3
-        n1 = TextBox1.Text
+        n1 = CDbl(TextBox1.Text)
+        dec = 0
         TextBox1.Clear()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         operador = 4
-        n1 = TextBox1.Text
+        n1 = CDbl(TextBox1.Text)
+        dec = 0
         TextBox1.Clear()
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Dim dec As Double
+        If dec = 0 Then
+            TextBox1.Text += ","
+        End If
+        dec = 1
+    End Sub
+
+    Private Sub Button16_Click(sender As Object, e As EventArgs) Handles Button16.Click
+        operador = 5
+        n1 = CDbl(TextBox1.Text)
+        dec = 0
+        TextBox1.Clear()
+    End Sub
+
+    Private Sub Button18_Click_1(sender As Object, e As EventArgs) Handles Button18.Click
+        TextBox1.Text = TextBox1.Text - (TextBox1.Text * 2)
+    End Sub
+
+    Private Sub Button19_Click(sender As Object, e As EventArgs) Handles Button19.Click
+
     End Sub
 End Class
