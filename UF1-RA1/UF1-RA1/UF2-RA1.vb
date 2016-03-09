@@ -32,4 +32,13 @@
         Me.suma(4, 7, resultado)
         MessageBox.Show(resultado)
     End Sub
+    Public Function suma2(ByVal n1 As Integer, ByVal n2 As Integer) As Integer
+        Return n1 + n2
+
+    End Function
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Dim resultado As Integer = Me.suma2(4, 7)
+        MessageBox.Show(resultado)
+    End Sub
 End Class

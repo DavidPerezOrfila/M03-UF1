@@ -139,10 +139,28 @@
     <Compile Include="Calculadora.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Calculadora_funcion_metodo.Designer.vb">
+      <DependentUpon>Calculadora_funcion_metodo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Calculadora_funcion_metodo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlMental.Designer.vb">
+      <DependentUpon>ControlMental.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlMental.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ejercicios11a19bucles.Designer.vb">
       <DependentUpon>Ejercicios11a19bucles.vb</DependentUpon>
     </Compile>
     <Compile Include="Ejercicios11a19bucles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EjerciciosUD2.Designer.vb">
+      <DependentUpon>EjerciciosUD2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EjerciciosUD2.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ex20bucles.Designer.vb">
@@ -193,10 +211,22 @@
     <Compile Include="Exercici9_Calendari.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Fruteria.Designer.vb">
+      <DependentUpon>Fruteria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fruteria.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Notas array.Designer.vb">
       <DependentUpon>Notas array.vb</DependentUpon>
     </Compile>
     <Compile Include="Notas array.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="p1.Designer.vb">
+      <DependentUpon>p1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="p1.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Semana.Designer.vb">
@@ -291,8 +321,17 @@
     <EmbeddedResource Include="Calculadora.resx">
       <DependentUpon>Calculadora.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Calculadora_funcion_metodo.resx">
+      <DependentUpon>Calculadora_funcion_metodo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlMental.resx">
+      <DependentUpon>ControlMental.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ejercicios11a19bucles.resx">
       <DependentUpon>Ejercicios11a19bucles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EjerciciosUD2.resx">
+      <DependentUpon>EjerciciosUD2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ex20bucles.resx">
       <DependentUpon>Ex20bucles.vb</DependentUpon>
@@ -318,8 +357,14 @@
     <EmbeddedResource Include="Exercici9_Calendari.resx">
       <DependentUpon>Exercici9_Calendari.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Fruteria.resx">
+      <DependentUpon>Fruteria.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Notas array.resx">
       <DependentUpon>Notas array.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="p1.resx">
+      <DependentUpon>p1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Semana.resx">
       <DependentUpon>Semana.vb</DependentUpon>
