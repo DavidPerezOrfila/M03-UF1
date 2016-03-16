@@ -109,12 +109,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\UF1-RA1.Designer.vb">
-      <DependentUpon>UF1-RA1.vb</DependentUpon>
-    </Compile>
-    <Compile Include="..\..\UF1-RA1.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="AdivinarN.Designer.vb">
       <DependentUpon>AdivinarN.vb</DependentUpon>
     </Compile>
@@ -306,9 +300,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="..\..\UF1-RA1.resx">
-      <DependentUpon>UF1-RA1.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AdivinarN.resx">
       <DependentUpon>AdivinarN.vb</DependentUpon>
     </EmbeddedResource>
